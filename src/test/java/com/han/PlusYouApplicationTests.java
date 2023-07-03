@@ -8,7 +8,7 @@ import org.springframework.util.DigestUtils;
 
 
 @SpringBootTest
-class UserCenterApplicationTests {
+class PlusYouApplicationTests {
 
 	@Test
 	void contextLoads() {
@@ -16,7 +16,6 @@ class UserCenterApplicationTests {
 		String password = "123";
 		String s = DigestUtils.md5DigestAsHex((SALT + password).getBytes());
 		System.out.println(s);
-
 	}
 
 }
